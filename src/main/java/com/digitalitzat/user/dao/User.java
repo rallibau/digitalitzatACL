@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.digitalitzat.user.pojo;
+package com.digitalitzat.user.dao;
 
 import java.io.Serializable;
 import javax.persistence.Column;

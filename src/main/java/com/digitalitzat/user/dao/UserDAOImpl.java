@@ -5,7 +5,6 @@
  */
 package com.digitalitzat.user.dao;
 
-import com.digitalitzat.user.pojo.User;
 import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
