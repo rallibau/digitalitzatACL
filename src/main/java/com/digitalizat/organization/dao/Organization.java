@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.digitalitzat.user.dao;
+package com.digitalizat.organization.dao;
 
 import java.io.Serializable;
 import javax.persistence.Column;
@@ -18,19 +18,16 @@ import javax.persistence.Table;
  * @author rallibau
  */
 @Entity
-@Table(name = "USERS")
-public class User implements Serializable {
-    
+@Table(name = "ACL_ORGANIZATION")
+public class Organization implements Serializable {
     @Id
     @Column(name = "ID")
     @GeneratedValue
     private Integer id;
-    
-    @Column(name = "EMAIL")
-    private String email;
-    
-    @Column(name = "PASSWORD")
-    private String password;
+    @Column(name = "NAME")
+    private String name;
+//    @OneToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER, mappedBy="organization")
+//    private List<Branch> branchs = new ArrayList<>();
 
     public Integer getId() {
         return id;
@@ -40,21 +37,22 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getEmail() {
-        return email;
+    public String getName() {
+        return name;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setName(String nombre) {
+        this.name = nombre;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
+//    public List<Branch> getBranchs() {
+//        return branchs;
+//    }
+//
+//    public void setBranchs(List<Branch> branchs) {
+//        this.branchs = branchs;
+//    }
+    
     
     
 }
