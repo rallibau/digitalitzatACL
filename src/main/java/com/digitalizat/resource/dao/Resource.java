@@ -27,6 +27,8 @@ public class Resource {
     private String name;
     @Column(name = "PATH")
     private String path;
+    @Column(name = "ICON")
+    private String icon;
 
     public Integer getId() {
         return id;
@@ -51,5 +53,15 @@ public class Resource {
     public void setPath(String path) {
         this.path = path;
     }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
+    
+    
 
 }
